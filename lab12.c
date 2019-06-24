@@ -72,9 +72,9 @@ void prim(int n, int m) {
     }
     if (!buildGraph(n, m, graph)) {
         for (int i = 0; i < n; i++) {
-        free(graph[i]);
-    }
-    free(graph);
+            free(graph[i]);
+        }
+        free(graph);
         return;
     }
     int *MST = Arr(n, -1);
@@ -83,10 +83,10 @@ void prim(int n, int m) {
     }
     else {
         for (int i = 0; i < n; i++) {
-        if (MST[i] != -1) {
-            printf("%d %d\n", i + 1, MST[i] + 1);
+            if (MST[i] != -1) {
+                printf("%d %d\n", i + 1, MST[i] + 1);
+            }
         }
-    }
     }
 
     free(MST);
