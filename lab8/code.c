@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-#include "Code.h"
+#include "code.h"
 
 Code* new_code(unsigned char* s, int size) {    
 	Code* tmp = (Code*)malloc(sizeof(Code));
