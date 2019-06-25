@@ -1,6 +1,6 @@
 #ifndef HUFFMAN_CODE_H
 #define HUFFMAN_CODE_H
-#include "Structs.h"
+#include "structs.h"
 #include "tree.h"
 
 Code* new_code(unsigned char* s, int size);
